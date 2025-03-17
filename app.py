@@ -40,4 +40,4 @@ def hi():
 
     result = model.predict([input_data])
 
-    return jsonify({"predicted_price": result[0]})
+    return jsonify({"predicted_price": round(result[0], 2)})
